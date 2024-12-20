@@ -1,0 +1,29 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Google Lens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automated Google Lens</h1>
+        <form id="image-form">
+            <label for="imageUrl">Enter Image URL:</label>
+            <input type="url" id="imageUrl" name="imageUrl" placeholder="https://example.com/image.jpg" required>
+            <button type="submit">Process Image</button>
+        </form>
+        <div id="status"></div>
+        <div id="result" style="display: none;">
+            <h2>Google Lens Results:</h2>
+            <img id="result-image" src="" alt="Screenshot will appear here">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
